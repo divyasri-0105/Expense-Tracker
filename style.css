@@ -1,0 +1,132 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page Background */
+body {
+    background: #f6f5f2;
+    color: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+/* Header */
+header h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Input Section */
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input input,
+.input select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background: #fafafa;
+}
+
+.input input:focus,
+.input select:focus {
+    border-color: #999;
+}
+
+/* Add Button */
+#addButton {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #2f2f2f;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#addButton:hover {
+    background: #444;
+}
+
+/* Summary Cards */
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.summary p {
+    flex: 1;
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Transaction List */
+.transactions h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#transactionList {
+    list-style: none;
+}
+
+#transactionList li {
+    background: #fafafa;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* Income / Expense colors (muted, not vibrant) */
+.income {
+    color: #2f6f4e;
+}
+
+.expense {
+    color: #7a3e3e;
+}
+
+/* Delete button (if used) */
+button {
+    background: transparent;
+    border: none;
+    color: #777;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+button:hover {
+    color: #000;
+}

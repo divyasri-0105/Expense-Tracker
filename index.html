@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta name="description" content="A simple expense tracker to track your expenses">
+        <meta name="keywords" content="expense tracker, expenses, effectivity">
+        <meta name="author" content="Sanapala DivyaSri">
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+        <header>
+            <h1>Expense Tracker</h1>
+        </header>
+
+        <div class="input">
+            <input type="text" id="nameInput" placeholder="Enter Transaction Name">
+            <input type="number" id="amountInput" placeholder="Enter amount">
+            
+            <label for="typeInput"> Select Type</label>
+            <select id="typeInput">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+
+            <button id="addButton">Add</button>
+        </div>
+
+        <div class="summary">
+            <p>Income:
+                <span id="incomeTotal">0</span>
+            </p>
+            <p>Expense:
+                <span id="expenseTotal">0</span>
+            </p>
+            <p>Balance:
+                <span id="balanceTotal">0</span>
+            </p>
+        </div>
+
+        <div class="transactions">
+            <h2>Transactions</h2>
+            <ul id="transactionList"></ul>
+        </div>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
